@@ -1,24 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Re:Start Edu</title>
-    <style>
-        body { font-family: sans-serif; padding: 20px; background: #f3f4f6; }
-        h1 { color: #111827; }
-        a.button {
-            display: block; margin: 10px 0; padding: 10px;
-            background: #2563eb; color: white; text-decoration: none; text-align: center;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Re:Start Edu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <div class="container">
     <h1>Re:Start Edu</h1>
-    <p><strong>Motto:</strong> „Re:începem educația. De la oameni, pentru oameni.”</p>
-    <a href="manifest.html" class="button">Manifest</a>
+    <p>Bun venit! Alege ce vrei să explorezi:</p>
+    <a href="manifesto.html" class="button">Manifest</a>
     <a href="lectia1.html" class="button">Lecția 1</a>
+    <a href="lectia2.html" class="button">Lecția 2</a>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </body>
 </html>
